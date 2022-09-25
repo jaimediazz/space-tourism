@@ -1,0 +1,70 @@
+h1 {
+    font-family: var(--bellefair-font);
+    font-size: 150px;
+    font-weight: normal;
+    color: #fff;
+    margin: 1.5rem 0;
+}
+
+h5 {
+    font-family: var(--barlow-font);
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 4.75px;
+    color: #fff;
+    margin: 0;
+}
+
+p {
+    font-family: var(--barlow-font);
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+
+span {
+    font-family: var(--bellefair-font);
+    font-size: 32px;
+    font-weight: normal;
+}
+
+/* LAYOUT */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 12rem auto 0 auto;
+}
+
+#text {
+    width: 60%;
+}
+
+#circleHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #979797;
+    transition: width 750ms, height 750ms;
+}
+
+#circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#circleHover:hover {
+    width: 300px;
+    height: 300px;
+}
