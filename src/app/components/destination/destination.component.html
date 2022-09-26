@@ -1,0 +1,44 @@
+<header id="title">
+  <h5>01 PICK YOUR DESTINATION</h5>
+</header>
+<div class="container">
+  <div id="img">
+    <img [src]="data.destinations[destinationIndex].images.png" alt="data.destinations[destinationIndex].name">
+  </div>
+  <div id="info">
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a routerLink="/">MOON</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/destinations">MARS</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/">EUROPE</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/">TITAN</a>
+          </li>
+        </ul>
+      </nav>
+      <h2>
+        {{ data.destinations[destinationIndex].name }}
+      </h2>
+    </header>
+    <section>
+      <p>{{ data.destinations[destinationIndex].description }}</p>
+    </section>
+    <footer>
+      <div>
+        <p class="blue-parragraph">AVG. DISTANCE</p>
+        <p>{{ data.destinations[destinationIndex].distance }}</p>
+      </div>
+      <div>
+        <p class="blue-parragraph">EST. TRAVEL TIME</p>
+        <p>{{ data.destinations[destinationIndex].travel }}</p>
+      </div>        
+    </footer>
+  </div>
+</div>
