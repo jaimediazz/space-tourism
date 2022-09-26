@@ -22,10 +22,12 @@ p {
     color: #fff;
 }
 
-span {
+a {
     font-family: var(--bellefair-font);
     font-size: 32px;
     font-weight: normal;
+    color: #000;
+    text-decoration: none;
 }
 
 .blue-parragraph {
@@ -65,7 +67,6 @@ span {
     height: 200px;
     border-radius: 50%;
     background-color: #fff;
-    cursor: pointer;
 }
 
 #circleHover:hover {
