@@ -4,6 +4,7 @@ nav a {
     font-family: var(--barlow-font);
     font-size: 16px;
     letter-spacing: 2.7px;
+    cursor: pointer;
 }
 
 img {
@@ -41,8 +42,8 @@ p {
 /* LAYOUT */
 
 #title {
-    width: 50%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 3rem auto;
 }
 
 .container {
@@ -72,6 +73,16 @@ p {
 .nav-item {
     margin-right: 1rem;
     padding-bottom: .5rem;
+}
+
+section {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #d0d6f9;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* EVENTS */

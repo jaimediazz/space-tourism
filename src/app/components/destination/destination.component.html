@@ -1,5 +1,5 @@
 <header id="title">
-  <h5>01 PICK YOUR DESTINATION</h5>
+  <h5><span class="blue-parragraph">01</span> PICK YOUR DESTINATION</h5>
 </header>
 <div class="container">
   <div id="img">
@@ -10,16 +10,16 @@
       <nav>
         <ul class="nav-list">
           <li class="nav-item">
-            <a routerLink="/">MOON</a>
+            <a (click)="changeDestination(0)">MOON</a>
           </li>
           <li class="nav-item">
-            <a routerLink="/destinations">MARS</a>
+            <a (click)="changeDestination(1)">MARS</a>
           </li>
           <li class="nav-item">
-            <a routerLink="/">EUROPE</a>
+            <a (click)="changeDestination(2)">EUROPA</a>
           </li>
           <li class="nav-item">
-            <a routerLink="/">TITAN</a>
+            <a (click)="changeDestination(3)">TITAN</a>
           </li>
         </ul>
       </nav>
@@ -28,7 +28,7 @@
       </h2>
     </header>
     <section>
-      <p>{{ data.destinations[destinationIndex].description }}</p>
+      <p class="blue-parragraph">{{ data.destinations[destinationIndex].description }}</p>
     </section>
     <footer>
       <div>

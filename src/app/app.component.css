@@ -15,7 +15,7 @@ nav a {
     right: 0;
     bottom: 0;
     overflow-y: auto;
-    background-image: url('../assets/home/background-home-desktop.jpg');
+    /* background-image: url('../assets/home/background-home-desktop.jpg'); */
     background-repeat: round;
 }
 

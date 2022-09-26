@@ -11,4 +11,7 @@ export class DestinationComponent {
   data = data;
   destinationIndex: number = 0;
 
+  changeDestination(index: number) {
+    this.destinationIndex = index;
+  }
 }
