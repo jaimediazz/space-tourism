@@ -1,1 +1,23 @@
-<p>technology works!</p>
+<div class="container">
+    <div id="technology">
+        <header>
+            <h5><span class="blue-parragraph">02</span> SPACE LAUNCH 101</h5>
+        </header>
+        <div id="info">
+            <nav>
+                <div class="circle"
+                    [ngClass]="technologyIndex === i ? 'active' : ''"
+                    (click)="changeTechnology(i)"
+                    *ngFor="let technology of data.technology; let i = index">{{ i + 1 }}</div>
+            </nav>
+            <section>
+                <p class="subheading blue-parragraph">THE TERMINOLOGY...</p>
+                <h3>{{ data.technology[technologyIndex].name }}</h3>
+                <p class="blue-parragraph">{{ data.technology[technologyIndex].description }}</p>
+            </section>
+        </div>
+    </div>
+    <div id="image">
+        <img [src]="data.technology[technologyIndex].images.portrait" [alt]="data.technology[technologyIndex].name">
+    </div>
+</div>

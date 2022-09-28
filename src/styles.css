@@ -12,3 +12,10 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.subheading {
+    font-family: var(--barlow-font);
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 2.35px;
+}
