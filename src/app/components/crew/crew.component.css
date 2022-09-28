@@ -1,0 +1,66 @@
+h5 {
+    font-family: var(--barlow-font);
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 4.75px;
+    color: #fff;
+}
+
+h4 {
+    font-family: var(--bellefair-font);
+    font-size: 32px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--bellefair-font);
+    font-size: 56px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+}
+
+p {
+    font-family: var(--barlow-font);
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.blue-parragraph {
+    color: #d0d6f9
+}
+
+/* LAYOUT */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#info {
+    width: 45%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #979797;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #fff;
+}
