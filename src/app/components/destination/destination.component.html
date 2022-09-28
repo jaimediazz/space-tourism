@@ -9,16 +9,16 @@
     <header>
       <nav>
         <ul class="nav-list">
-          <li class="nav-item">
+          <li class="nav-item" [ngClass]="destinationIndex === 0 ? 'active' : ''">
             <a (click)="changeDestination(0)">MOON</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" [ngClass]="destinationIndex === 1 ? 'active' : ''">
             <a (click)="changeDestination(1)">MARS</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" [ngClass]="destinationIndex === 2 ? 'active' : ''">
             <a (click)="changeDestination(2)">EUROPA</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" [ngClass]="destinationIndex === 3 ? 'active' : ''">
             <a (click)="changeDestination(3)">TITAN</a>
           </li>
         </ul>

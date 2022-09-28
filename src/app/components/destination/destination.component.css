@@ -85,9 +85,14 @@ footer {
     justify-content: space-between;
 }
 
+.active {
+    padding-bottom: .25rem;
+    border-bottom: .25rem solid white;
+}
+
 /* EVENTS */
 
 .nav-item:hover {
     padding-bottom: .25rem;
-    border-bottom: .25rem solid white;
+    border-bottom: .25rem solid #979797;
 }

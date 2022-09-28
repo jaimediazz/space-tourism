@@ -6,16 +6,24 @@
     <nav>
       <ul class="nav-list">
         <li class="nav-item">
-          <a routerLink="/" (click)="changeBackgroundImage(0)"><b>00</b> HOME</a>
+          <a routerLink="/" (click)="changeBackgroundImage(0)" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>
+            <b>00</b> HOME
+          </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/destinations" (click)="changeBackgroundImage(1)"><b>01</b> DESTINATION</a>
+          <a routerLink="/destinations" (click)="changeBackgroundImage(1)" routerLinkActive="active">
+            <b>01</b> DESTINATION
+          </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/" (click)="changeBackgroundImage(2)"><b>02</b> CREW</a>
+          <a routerLink="/fdsf" (click)="changeBackgroundImage(2)" routerLinkActive="active">
+            <b>02</b> CREW
+          </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/" (click)="changeBackgroundImage(3)"><b>03</b> TECHNOLOGY</a>
+          <a routerLink="/fsdf" (click)="changeBackgroundImage(3)" routerLinkActive="active">
+            <b>03</b> TECHNOLOGY
+          </a>
         </li>
       </ul>
     </nav>
