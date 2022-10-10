@@ -35,6 +35,11 @@ p {
 
 /* LAYOUT */
 
+#title {
+    width: 80%;
+    margin: 3rem auto;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -63,4 +68,22 @@ nav {
 
 .active {
     background-color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1100px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #info {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    #title {
+        text-align: left;
+    }
 }

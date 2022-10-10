@@ -73,3 +73,18 @@ a {
     width: 300px;
     height: 300px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1100px) {
+    .container {
+        flex-direction: column;
+        margin: 5rem auto;
+    }   
+    
+    #text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
