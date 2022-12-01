@@ -27,6 +27,17 @@
         </li>
       </ul>
     </nav>
+
+    <!-- RESPONSIVE MENU -->
+    <button class="hamburger" (click)="toggleMenu()">
+      <img src="../assets/shared/icon-hamburger.svg" alt="hamburger">
+    </button>
+
+    <app-responsive-menu 
+      *ngIf="showMenu" 
+      class="menuResponsive"
+      [showMenu]="showMenu"
+      (closeMenuEvent)="toggleMenu()"></app-responsive-menu>    
   </header>
   <router-outlet></router-outlet>
 </div>

@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
     "url('../assets/technology/background-technology-desktop.jpg')"
   ];
   bgIndex: number = 0;
+  showMenu: boolean = false;
   
   ngOnInit(): void {
     let bgIndexStorage = sessionStorage.getItem("bgIndex");
@@ -24,6 +25,10 @@ export class AppComponent implements OnInit {
   changeBackgroundImage(index: number) {
     sessionStorage.setItem("bgIndex", index.toString());
     this.bgIndex = index;
+  }
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
   }
 
 }
